@@ -1,0 +1,12 @@
+{
+  "users": [
+    { "id": 101, "username": "emilys",   "password": "wrongpass1",       "reason": "real user, wrong password" },
+    { "id": 102, "username": "michaelw", "password": "emilyspass",       "reason": "real user, another user's password" },
+    { "id": 103, "username": "sophiab",  "password": "SOPHIABPASS",      "reason": "real user, password in wrong case" },
+    { "id": 104, "username": "nouser123", "password": "nouser123pass",   "reason": "username does not exist" },
+    { "id": 105, "username": "emilyspass", "password": "emilys",         "reason": "username and password swapped" },
+    { "id": 106, "username": "admin' OR '1'='1", "password": "password1", "reason": "SQL-injection style username" },
+    { "id": 107, "username": "john.doe@example.com", "password": "johnpass1", "reason": "email is not a username" },
+    { "id": 108, "username": "jamesd",   "password": "jamesdpass ",      "reason": "real user, trailing space in password" }
+  ]
+}

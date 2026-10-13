@@ -1,0 +1,37 @@
+import XCTest
+
+/// Login -> open a product -> Add to Cart -> check the item count and user, here and on the Cart tab.
+/// Run: python3 tools/main.py --test LoginTestUITests/CartUITests
+final class CartUITests: BaseXCTestSetup {
+    
+    //    @MainActor
+    //    func testAddToCartShowsItemCountAndUser() {
+    //        Login.LoginScreen()
+    //            .tapUserTextField(TestData.username)
+    //            .tapPasswordTextField(TestData.password)
+    //            .tapLoginButtonSuccess()
+    //            .assertDisplayed(DashBoard.ProductScreen())
+    //
+    //        let app = XCUIApplication()
+    //
+    //        // Products tab -> first product
+    //        XCTAssertTrue(app.cells.firstMatch.waitForExistence(timeout: 15), "No products shown")
+    //        app.cells.firstMatch.tap()
+    //
+    //        // Product details -> Add to Cart
+    //        let addButton = app.buttons["addToCartButton"]
+    //        XCTAssertTrue(addButton.waitForExistence(timeout: 10), "Add to Cart button not shown")
+    //        addButton.tap()
+    //
+    //        let summary = app.staticTexts["cartSummary"]
+    //        XCTAssertTrue(summary.waitForExistence(timeout: 5), "Cart summary not shown")
+    //        XCTAssertTrue(summary.label.contains("1 item"), "Wrong count: \(summary.label)")
+    //        XCTAssertTrue(summary.label.contains(TestData.username), "Wrong user: \(summary.label)")
+    //
+    //        // Cart tab shows the same
+    //        app.tabBars.buttons["Cart"].tap()
+    //        XCTAssertTrue(app.staticTexts["cartUserLabel"].waitForExistence(timeout: 5))
+    //        XCTAssertEqual(app.staticTexts["cartUserLabel"].label, "User: \(TestData.username)")
+    //        XCTAssertEqual(app.staticTexts["cartItemCountLabel"].label, "Items in cart: 1")
+}
+
